@@ -6,10 +6,10 @@ import os
 # Carrega variáveis de ambiente
 load_dotenv()
 
-API_KEY = os.getenv('API_KEY')
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 
-if not API_KEY:
-    raise ValueError("Erro: API_KEY não encontrado no .env")
+if not TELEGRAM_TOKEN:
+    raise ValueError("Erro: TELEGRAM_TOKEN não encontrado no .env")
 
 # Simulação de dados
 proxima_partida = "🦁 FURIA vs G2\n🗓️ Sábado, 27/04 - 16h (BRT)\n🏆 ESL Pro League"
@@ -80,7 +80,7 @@ def main_menu():
 
 # Main
 if __name__ == '__main__':
-    app = ApplicationBuilder().token(API_KEY).build()
+    app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT, handle_message))
