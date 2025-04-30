@@ -38,8 +38,6 @@ Este projeto tem como intuito final atender aos requisitos do desafio do time Fu
     <code>TELEGRAM_TOKEN=seu_token_aqui</code></li>
 </ol>
 
-<p><strong>⚡ Importante:</strong> Nunca compartilhe seu token publicamente! Ele dá controle total sobre seu bot.</p>
-
 <h2>⚙️ Configuração do Projeto</h2>
 
 <h3>Pré-requisitos</h3>
